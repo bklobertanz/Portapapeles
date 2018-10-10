@@ -7,9 +7,12 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { EditorComponent } from './components/editor/editor.component';
 
-//Routes
+// Routes
 
 import { APP_ROUTING } from './app.routes';
+
+// Ace wrapper
+import { AceEditorModule } from 'ng2-ace-editor';
 
 
 @NgModule({
@@ -22,7 +25,8 @@ import { APP_ROUTING } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    AceEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
